@@ -23,7 +23,7 @@ body {
     box-sizing: border-box;
     overflow: hidden;
 }
-.button-2 a {
+.button-2 p {
     font-size: 16px;
     color: #34495e;
     text-decoration: none;
@@ -44,7 +44,7 @@ body {
 .button-2:hover .eff-2 {
     top: 0;
 }
-.button-2:hover a {
+.button-2:hover p {
     color: #fff;
 }
 

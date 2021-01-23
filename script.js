@@ -4,10 +4,10 @@ $(document).ready(function () {
     var numberDivs = $(".roles").children().length; //the number of children of the roles div
     var first = $(".roles div:nth-child(1)"); //the first div nested in roles div
     setInterval(function () {
-        var number = current * -height;
-        first.css("margin-top", number + "px");
+        var number = current * -height * 0.12;
+        first.css("margin-top", number + "vmin");
         if (current === numberDivs) {
-            first.css("margin-top", "0px");
+            first.css("margin-top", "0vmin");
             current = 1;
         } else current++;
     }, 1500);

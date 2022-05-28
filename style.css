@@ -3,20 +3,30 @@ body {
   color: #222;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: bold;
+  min-height: 100%;
 }
 
 .wrapper {
   padding: 100px;
+  padding-bottom: 0;
   display: block;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   margin: 0 auto;
 }
 
+#hi {
+  font-size: 36px;
+  font-weight: extra-bold;
+  margin-bottom: 60px;
+}
+
+/* 
 a {
   text-decoration: none;
   color: lightslategray;
   font-weight: bolder;
+  font-size: 18px;
 }
 
 #contact {
@@ -24,6 +34,15 @@ a {
   font-size: 16px;
 }
 
-#hi {
-  font-size: 32px;
+
+
+#basic-intro {
+  margin-bottom: 30px;
 }
+
+footer {
+  clear: both;
+  position: relative;
+  height: 100px;
+  margin-top: 150px;
+} */

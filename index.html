@@ -1,39 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-    <script>
-      function openInNewTab(url) {
-        var win = window.open(url, "_blank");
-        win.focus();
-      }
-    </script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <p>
-        <div id="hi">Hi there! 👋 </div> <br /><br />I'm 16 years old Korean programmer. <br />I'm a
-        student at the
-        <a href="https://smschool.us/" target="_blank">St. Mary's School</a>.
-        <br />
-        <div id="contact">Contact:
-            <a href="mailto:minkyu070602@gmail.com" target="_blank">minkyu070602@gmail.com</a></div>
-        
-      </p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script>
+    setTimeout(() => window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" }), 1000);
+  </script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="terminal-window.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://www.mattboldt.com/demos/typed-js/js/typed.custom.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <p>
+    <div id="hi">Hi there! 👋 </div>
+
+    <div class="terminal-window">
+      <header>
+        <div class="button green"></div>
+        <div class="button yellow"></div>
+        <div class="button red"></div>
+      </header>
+      <section class="terminal">
+        <div class="history"></div>
+        $&nbsp;<span class="prompt"></span>
+        <span class="typed-cursor"></span>
+
+      </section>
     </div>
-  </body>
+    <!-- data -->
+    <div class="terminal-data intro-run-output">
+      <br>
+      Introduction to Kinkyu
+      <br>
+      ----------------------------------------------<br>
+      <span class="grey">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span> Kinkyu <br />
+      <span class="grey">Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span> 15 <br />
+      <span class="grey">Nationality :</span> Republic of Korea<br />
+      <span class="grey">Residence&nbsp;&nbsp;&nbsp;:</span> United States <br /><br />
+
+      &nbsp;&nbsp;Ability: Programming<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓</span> <span class="grey">Create a Website&nbsp;&nbsp;| <span class="logo next">Next.js</span></span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓</span> <span class="grey">Make an algorithm | <span class="logo python">Python</span></span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓</span> <span class="grey">Set up API Server | <span class="logo express">Express.js</span> and <span class="logo graphql">GraphQL</span></span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span class="red">✗</span> <span class="grey">Create an mobile app </span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span class="red">✗</span> <span class="grey">Building a computer </span><br>
+      <br>
+      <span class="gray">&nbsp;------------- -------------</span><br>
+      &nbsp;&nbsp;Pretty well&nbsp;&nbsp;&nbsp;Keep Trying<br>
+      <span class="gray">&nbsp;------------- -------------</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓ 3</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">✗ 2</span> <br>
+      <br>
+      &nbsp;&nbsp;Completed 1 feature in 0.01s<br>&nbsp;
+    </div>
+
+    <!-- <div id="basic-intro">
+      My name is Kinn and I am a software engineer. <br />
+      I am currently studying at the US though I am Korean.
+    </div>
+
+    If you want to know more about me, please click the button below. <br />
+    <br />
+
+    <footer><a href='https://kinqq.com/blog/aboutme' target="_blank">More About Me</a></footer> -->
+
+    </p>
+  </div>
+</body>
+
 </html>

@@ -1,0 +1,134 @@
+.terminal-window {
+    text-align: left;
+    font-weight: normal;
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 100px;
+    position: relative;
+  }
+  
+  .terminal-window header {
+    background: #e0e8f0;
+    height: 30px;
+    border-radius: 8px 8px 0 0;
+    padding-left: 10px;
+  }
+  
+  .terminal-window header .button {
+    width: 12px;
+    height: 12px;
+    margin: 10px 4px 0 0;
+    display: inline-block;
+    border-radius: 8px;
+  }
+  
+  .terminal-window header .button.green {
+    background: #3bb662;
+  }
+  
+  .terminal-window header .button.yellow {
+    background: #e5c30f;
+  }
+  
+  .terminal-window header .button.red {
+    background: #e75448;
+  }
+  
+  .terminal-window section.terminal {
+    overflow: hidden;
+    color: white;
+    font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+    font-size: 11pt;
+    background: #30353a;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    bottom: 0;
+    overflow: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .terminal-window section.terminal::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .terminal-window section.terminal .typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .terminal-data {
+    display: none;
+  }
+  .terminal-window .gray {
+    color: gray;
+  }
+  .terminal-window .grey {
+    color: rgb(170, 170, 170);
+  }
+  .terminal-window .green {
+    color: green;
+  }
+  .terminal-window .red {
+    color: red;
+  }
+  .terminal-window .logo {
+    font-weight: bold;
+  }
+  .terminal-window .logo.next {
+    color: #bebebe;
+  }
+  .terminal-window .logo.python {
+    color: #387BB3;
+  }
+  .terminal-window .logo.express {
+    color: #76B570;
+  }
+  .terminal-window .logo.graphql {
+    color: #E535AB;
+  }
+  .terminal-window .link.aboutme {
+    text-decoration-color: none;
+    color: white;
+  }

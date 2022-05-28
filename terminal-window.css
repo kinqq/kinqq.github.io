@@ -1,10 +1,10 @@
 .terminal-window {
     text-align: left;
     font-weight: normal;
-    width: 600px;
-    height: 600px;
+    width: 60%;
+    height: 70vh;
     border-radius: 10px;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 100px;
     position: relative;
   }
@@ -131,4 +131,14 @@
   .terminal-window .link.aboutme {
     text-decoration-color: none;
     color: white;
+  }
+
+  @media ( max-width: 1023px ) {
+    .terminal-window {
+      width: 100%;
+    }
+    .terminal-window section.terminal {
+      font-size: 3vw;
+    }
+
   }

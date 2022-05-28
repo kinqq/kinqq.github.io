@@ -4,13 +4,18 @@ $(function () {
       action: "type",
       strings: ["npm install^200 -^100g^50 kinkyu^300"],
       output:
-        '<span class="grey">+ kinkyu@0.10.2 <br />added 13 packages from 4 contributors in 0.03s</span><br>&nbsp;',
+        $(window).width() >= 768
+          ? '<span class="grey">+ kinkyu@0.10.2 <br />added 13 packages from 4 contributors in 0.03s</span><br>&nbsp;'
+          : '<span class="grey">+ kinkyu@0.10.2 installed<br>&nbsp;',
       postDelay: 500,
     },
     {
       action: "type",
       strings: ["kinkyu^200 --intro^400"],
-      output: $(".intro-run-output").html(),
+      output:
+        $(window).width() >= 768
+          ? $(".intro-run-output").html()
+          : $(".intro-run-output-mobile").html(),
       postDelay: 2500,
     },
     {
